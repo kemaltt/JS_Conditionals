@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Übungs-string_number_math_conditional</title>
+
+</head>
+
+<body>
+
+
+    <section>
+        <p id="output1"></p>
+        <p id="output2"></p>
+        <p id="output3"></p>
+        <p id="output4"></p>
+    </section>
+
+    <section>
+        <p id="output5">
+
+        </p>
+    </section>
+    <!-- conditional-statements Lev_1 ----------------------------------------->
+    <!-- //Lev1_1--------------- -->
+    <section>
+        <form onsubmit="return false" action="">
+            <div>
+                <label for="">Enter a age</label>
+                <input type="number" name="number" id="age">
+            </div>
+            <button onclick="adult()">check age</button>
+            <p id="output-age"></p>
+        </form>
+    </section>
+    <!-- //Lev1_2--------------- -->
+    <section>
+        <form onsubmit="return false" action="">
+            <div>
+                <label for="">Wetter-Qualität </label>
+                <input style="width: 30px;" type="number" name="number" id="num" min="0" max="10">
+
+            </div>
+            <button onclick="weather()">check Qualität</button>
+            <p id="output-wetter"></p>
+        </form>
+    </section>
+
+    <!-- //Lev1_2--------------- -->
+    <section>
+        <h1 style="color: rgb(0, 119, 255)">JavaScript : if else statement</h1>
+        <h3>
+            Hier prüfen wir, ob das Alter größer als 18 ist oder nicht. Shisha rauchen darf man nur, wenn man volljährig ist.
+        </h3>
+        <hr />
+        <form onsubmit="return false" name="form1" action="#">
+            Geben Sie Ihr Alter ein<input type="text" name="text1" id="input" />
+            <input type="button" value="Alter" onclick="greaterThan()" />
+            <p id="output-rauchen"></p>
+        </form>
+
+
+    </section>
+
+    <!-- conditional-statements Lev_2 ----------------------------------------->
+    <!-- Lev2_2 -->
+    <section class="statements2 lvl2_2" id="lev2_2">
+        <form onsubmit="return false" action="">
+            <div>
+
+                <label for="points">AQI :<span id="range"></span></label><br>
+                <input onchange="checkAirQuality()" type="range" name="points" id="points" min="0" max="150">
+
+            </div>
+
+            <p>Level of health concern: <span id="output-concern"></span> </p>
+            <p>Level of health effect: <span id="output-effect"></span> </p>
+
+        </form>
+
+    </section>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
