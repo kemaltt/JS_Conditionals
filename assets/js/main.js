@@ -44,17 +44,38 @@ let text = 'Sam is back from coding school';
 // document.write(text.slice(0, 7) + text.slice(23))
 
 //Lev1_6--------------------
-let text2 = 'Sam is working at coding school';
+// let text2 = 'Sam is working at coding school';
 
 let output1 = document.getElementById('output1')
 let output2 = document.getElementById('output2')
 let output3 = document.getElementById('output3')
 let output4 = document.getElementById('output4')
 
-output1.innerHTML = text2.substr(0, 3)
-output2.innerHTML = text2.substr(4, 2)
-output3.innerHTML = text2.substr(15, 2) + ' ' + text2.substr(25, 6)
-output4.innerHTML = text2.substr(0, 3) + ' ' + text2.substr(7, 7).replace('working', 'works') + ' ' + text2.substr(15, 2) + ' ' + text2.substr(24, 7)
+// output1.innerHTML = text2.substr(0, 3)
+// output2.innerHTML = text2.substr(4, 2)
+// output3.innerHTML = text2.substr(15, 2) + ' ' + text2.substr(25, 6)
+// output4.innerHTML = text2.substr(0, 3) + ' ' + text2.substr(7, 7).replace('working', 'works') + ' ' + text2.substr(15, 2) + ' ' + text2.substr(24, 7)
+
+
+//Lev1_8--------------------
+// let txt1 = 'Sam is going to coding school';
+
+console.log(A.toUpperCase().replace('CODING ', ''));
+console.log(A.toLowerCase().replace('coding ', ''));
+console.log(A.slice(0, 3).toUpperCase().concat(A.slice(3, 15).concat(A.slice(-7).toUpperCase())));
+console.log(A.slice(0, 3).concat(A.slice(3, 6).replace('i', 'I')).concat(A.slice(6, 15).replace('g', 'G').replace('t', 'T')).concat(A.slice(-7).replace('s', 'S')));
+
+
+//Lev1_9--------------------
+let text1 = 'Sam is going to coding school';
+let text2 = 'Tom'
+let text3 = 'programming bike'
+let text4 = 'and'
+
+console.log(text1.slice(0, 15).concat(text1.slice(-7)).concat(' ').concat(text4).concat(' to the movie theater'));
+console.log(text1.slice(0, 15).concat(' the movie theater'));
+console.log(text2.concat(' ').concat(text4).concat(' ').concat(text1.slice(0, 4)).concat('are').concat(text1.slice(6, 16)).concat(text1.slice(-7)));
+console.log(text2.concat(' ').concat(text4).concat(' ').concat(text1.slice(0, 4)).concat('are').concat(text1.slice(6, 16)).concat('gym ').concat(text4).concat(' to the movie theater'));
 
 //template-literals================================
 //Lev1_1--------------
@@ -198,5 +219,5 @@ function berechne(a, b) {
     }
 }
 
-console.log(berechne(5, 4));//9
-console.log(berechne(5, 5));//50
+console.log(berechne(5, 4)); //9
+console.log(berechne(5, 5)); //50
